@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnAjustarInventario"
+        android:icon="@drawable/ic_action_ajustar_inventario"
+        android:title="Ajustar Inventario"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mnAjustes"
+        android:icon="@drawable/ic_action_ajustes_blanco"
+        android:title="Ajustes"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mnAcercaDe"
+        android:title="Acerca De"
+        app:showAsAction="never" />
+
+</menu>

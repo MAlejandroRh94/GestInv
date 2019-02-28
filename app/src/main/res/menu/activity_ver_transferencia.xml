@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnModificar"
+        android:icon="@drawable/ic_action_modificar_blanco"
+        android:title="Modificar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mnGuardar"
+        android:icon="@drawable/ic_action_guardar_blanco"
+        android:title="Guardar"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.severoochoa.ies.manuelalejandroruizhernandez.gestinv">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.CategoriasActivity"
+            android:label="Categorias"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.ProductosActivity"
+            android:label="Productos"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.TransferenciasActivity"
+            android:label="Transferencias"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.RecepcionesActivity"
+            android:label="Recepciones"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.AlmacenesActivity"
+            android:label="Almacenes"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.InformesActivity"
+            android:label="Informes"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.Categorias.CrearCategoriaActivity"
+            android:label="Crear Categoria"
+            android:parentActivityName=".Activities.CategoriasActivity" />
+        <activity
+            android:name=".Activities.Categorias.VerCategoriaActivity"
+            android:label="Ver Categoria"
+            android:parentActivityName=".Activities.CategoriasActivity" />
+        <activity
+            android:name=".Activities.AcercaDeActivity"
+            android:label="Acerca De"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.PreferencesActivity"
+            android:label="Ajustes"
+            android:parentActivityName=".Activities.MainActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="net.severoochoa.ies.manuelalejandroruizhernandez.gestinv.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activities.AjustarInventarioActivity"
+            android:label="Ajustar Inventario"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity
+            android:name=".Activities.Productos.CrearProductoActivity"
+            android:label="Crear Producto"
+            android:parentActivityName=".Activities.ProductosActivity" />
+        <activity
+            android:name=".Activities.Productos.VerProductoActivity"
+            android:label="Ver Producto"
+            android:parentActivityName=".Activities.ProductosActivity" />
+
+        <receiver android:name=".BroadcastReceiver.NotificationBroadcast" />
+
+        <activity
+            android:name=".Activities.Almacenes.CrearAlmacenActivity"
+            android:label="Crear Almacen"
+            android:parentActivityName=".Activities.AlmacenesActivity" />
+        <activity
+            android:name=".Activities.Almacenes.VerAlmacenActivity"
+            android:label="Ver Almacen"
+            android:parentActivityName=".Activities.AlmacenesActivity" />
+        <activity
+            android:name=".Activities.Almacenes.Secciones.VerSeccionActivity"
+            android:label="Ver Seccion"
+            android:parentActivityName=".Activities.Almacenes.VerAlmacenActivity" />
+        <activity
+            android:name=".Activities.Almacenes.Secciones.AnadirSeccionActivity"
+            android:label="Añadir Seccion"
+            android:parentActivityName=".Activities.Almacenes.VerAlmacenActivity" />
+        <activity
+            android:name=".Activities.Almacenes.StocksMinimos.AnadirStockMinimoActivity"
+            android:label="Añadir Stock Minimo"
+            android:parentActivityName=".Activities.Almacenes.VerAlmacenActivity" />
+        <activity
+            android:name=".Activities.Transferencias.CrearTransferenciasActivity"
+            android:label="Crear Transferencia"
+            android:parentActivityName=".Activities.TransferenciasActivity" />
+        <activity
+            android:name=".Activities.Transferencias.VerTransferenciasActivity"
+            android:label="Ver Transferencia"
+            android:parentActivityName=".Activities.TransferenciasActivity" />
+        <activity
+            android:name=".Activities.Recepciones.VerRecepcionActivity"
+            android:label="Ver Recepcion"
+            android:parentActivityName=".Activities.RecepcionesActivity" />
+        <activity
+            android:name=".Activities.Recepciones.CrearRecepcionActivity"
+            android:label="Crear Recepcion"
+            android:parentActivityName=".Activities.RecepcionesActivity" />
+        <activity
+            android:name=".Activities.Informes.VerStockAlmacenesActivity"
+            android:label="Ver Stock Almacenes Activity"
+            android:parentActivityName=".Activities.AjustarInventarioActivity" />
+    </application>
+
+</manifest>

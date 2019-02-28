@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="30"
+        android:dialogTitle="Intervalo de dias para ajustar el inventario"
+        android:inputType="number"
+        android:key="pref_ajustar_inventario"
+        android:numeric="integer"
+        android:title="Ajustar Inventario" />
+    <Preference
+        android:key="cargar_datos_prueba"
+        android:title="Cargar datos de prueba" />
+
+
+    <Preference
+        android:key="borrar_base_datos"
+
+        android:title="Borrar base de datos" />
+</PreferenceScreen>
